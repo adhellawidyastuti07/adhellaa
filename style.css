@@ -758,8 +758,24 @@ footer {
   .galeri-banner,
   .tips-banner,
   .kontak-banner {
-    height: 200px;
-    margin-top: 50px; 
+    margin-top: 60px; 
+    height: 220px; 
+  }
+  section {
+    scroll-margin-top: 60px;
+  }
+  .destinasi-gallery {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  .destinasi-gallery .card {
+    width: 100%;
+  }
+  .destinasi-gallery .card img {
+    height: 180px;
   }
   .home-hero .hero-content,
   .banner-text,
