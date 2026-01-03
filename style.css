@@ -712,10 +712,12 @@ footer {
   .profile-banner,
   .galeri-banner,
   .tips-banner,
-  .kontak-banner { 
-    min-height: 220px;
-    height: auto; 
-    padding-top: 100px;
+  .kontak-banner {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    min-height: 220px;  
   }
   section {
     scroll-margin-top: 80px; 
@@ -774,8 +776,11 @@ footer {
   .home-hero .hero-content,
   .banner-text,
   .kontak-banner .banner-text {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;     
     padding: 0 10px;
-    font-size: 0.9em;
+    font-size: 0.9em; 
   }
   .home-hero h1,
   .profile-banner h1,
