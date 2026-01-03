@@ -327,18 +327,15 @@ footer {
 .destinasi-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    gap: 20px;
 }
 .destinasi-gallery .card {
-    width: 280px;
-    background: #111;
-    border-radius: 12px;
-    overflow: hidden;
-    padding: 15px;
+    height: auto;
+    overflow: visible;
+}
+.destinasi-gallery .card p {
+    white-space: normal;
+    line-height: 1.6;
 }
 .destinasi-gallery img {
     width: 100%;
@@ -350,11 +347,31 @@ footer {
     text-align: center;
     margin: 12px 0 8px;
 }
-.destinasi-gallery p {
-    font-size: 0.95em;
-    color: #ddd;
-    text-align: justify;
+/* =====================
+   FIX KHUSUS DESTINASI
+   ===================== */
+
+.destinasi-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
 }
+
+.destinasi-page .card {
+  flex: 1 1 280px;
+  height: auto;
+  overflow: visible;   /* PENTING */
+}
+
+.destinasi-page .card p {
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.6;
+}
+
 footer {
     text-align: center;
     padding: 15px;
@@ -435,6 +452,7 @@ footer {
     color: #ddd;
     line-height: 1.7;
 }
+/* DESTINASI GALERI */
 .destinasi-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -443,30 +461,41 @@ footer {
     margin: 40px auto;
     max-width: 1200px;
 }
+
 .destinasi-gallery .card {
-    flex: 1 1 250px;             
+    flex: 1 1 280px;          /* card fleksibel */
     background-color: #111;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: visible;        /* biar teks panjang tidak terpotong */
     text-align: center;
     color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;             /* tinggi card mengikuti konten */
 }
+
 .destinasi-gallery .card img {
     width: 100%;
-    height: 200px;
+    height: auto;             /* tinggi gambar proporsional */
     object-fit: cover;
     display: block;
+    border-radius: 10px 10px 0 0; /* optional biar rapi */
 }
+
 .destinasi-gallery .card h3 {
     margin: 10px 0 5px;
     color: #00bfff;
 }
+
 .destinasi-gallery .card p {
     padding: 0 10px 15px;
     font-size: 0.95em;
+    line-height: 1.6;
     color: #ddd;
+    white-space: normal;      /* teks bisa wrap */
+    overflow: visible;        /* teks tidak terpotong */
+    height: auto;             /* biar panjang teks terlihat semua */
 }
+
 .card-text {
     margin-top: 10px;
     color: #f4f4f4;
@@ -508,14 +537,6 @@ footer {
 .tips-desc p {
     color: #ddd;
     line-height: 1.7;
-}
-.destinasi-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 40px auto;
-    max-width: 1200px;
 }
 .destinasi-gallery .card {
     flex: 1 1 300px;
@@ -667,6 +688,9 @@ footer {
   body {
     padding-top: 120px;
   }
+  section {
+    scroll-margin-top: 150px;
+  }
   .navbar {
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -689,7 +713,9 @@ footer {
   .galeri-banner,
   .tips-banner,
   .kontak-banner { 
-  height: 220px; 
+    min-height: 220px;
+    height: auto; 
+    padding-top: 100px;
   }
   section {
     scroll-margin-top: 80px; 
@@ -703,18 +729,47 @@ footer {
     z-index: 1;
     max-width: 90%;
   }
-  .destinasi-gallery {
+  .destinasi-page {
     flex-direction: column;
-    gap: 15px;
+  }
+  .destinasi-page .card {
+    width: 100%;
+  }
+  .destinasi-gallery {
+    flex-direction: column;       
+    gap: 15px;                     
     padding: 0 10px;
     max-width: 100%;
     margin: 20px auto;
   }
   .destinasi-gallery .card {
-    width: 100%;
+    width: 100%;                   
+    height: auto;                  
+    overflow: visible;             
+    padding: 15px 10px;            
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
   }
   .destinasi-gallery .card img {
-    height: 180px;
+    width: 100%;
+    height: auto;                  
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .destinasi-gallery .card h3 {
+    font-size: 1.2em;              
+    margin: 10px 0 5px;
+    color: #00bfff;
+  }
+  .destinasi-gallery .card p {
+    font-size: 0.95em;             
+    line-height: 1.5;
+    white-space: normal;           
+    overflow: visible;             
+    height: auto;
+    padding: 0 5px 10px;
+    color: #ccc;
   }
   .home-hero .hero-content,
   .banner-text,
