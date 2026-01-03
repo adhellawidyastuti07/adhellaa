@@ -714,17 +714,23 @@ footer {
   .tips-banner,
   .kontak-banner {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    text-align: center;      
-    min-height: 220px;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh; 
+    height: auto;       
+    padding-top: 0;     
   }
   section {
     scroll-margin-top: 80px; 
   }
   .destinasi-banner { 
-    min-height: 260px;
-    padding: 30px 15px;
+    min-height: 60vh;  
+    padding: 0 15px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .destinasi-banner .banner-text {
     position: relative;
