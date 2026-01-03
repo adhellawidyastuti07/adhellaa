@@ -4,20 +4,22 @@
     box-sizing: border-box;
 }
 body {
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 100px;
 }
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;   
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 .logo {
     color: #00c3ff;
@@ -42,7 +44,6 @@ body {
 }
 .home-hero {
     height: 300px;
-    margin-top: 70px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -164,23 +165,6 @@ footer {
     margin-top: 50px;
 }
 /* PROFIL */
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #111;
-    color: #f4f4f4;
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;   
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -201,7 +185,6 @@ body {
     color: #00bfff;
 }
 .page-banner {
-  margin-top: 70px;
   padding: 70px 20px;
   text-align: center;
   background: #222;
@@ -217,7 +200,6 @@ body {
 }
 .profile-banner {
     height: 300px;
-    margin-top: 70px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -286,25 +268,6 @@ footer {
     margin-top: 50px;
 }
 /* DESTINASI */
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;   
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -332,8 +295,8 @@ body {
     border-bottom: 2px solid #00c3ff;
 }
 .destinasi-banner {
-    height: 300px;
-    margin-top: 70px;
+    min-height: 300px;
+    padding: 40px 15px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -400,17 +363,6 @@ footer {
     margin-top: 50px;
 }
 /* GALERI */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;   
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -434,7 +386,6 @@ footer {
 }
 .hero {
     height: 200px;
-    margin-top: 70px;
     background: #222; 
     display: flex;
     justify-content: center;
@@ -457,7 +408,6 @@ footer {
 }
 .galeri-banner {
     height: 300px;
-    margin-top: 70px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -532,7 +482,6 @@ footer {
 /* TIPS */
 .tips-banner {
     height: 300px;
-    margin-top: 70px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -595,25 +544,6 @@ footer {
     margin-top: 50px;
 }
 /* KONTAK */
-body {
-    background: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #111;  
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
 .navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -639,7 +569,6 @@ body {
 }
 .kontak-banner {
     height: 300px;
-    margin-top: 70px;
     background: url('img/profiltravel.jpeg') center/cover no-repeat;
     position: relative;
     display: flex;
@@ -735,6 +664,9 @@ footer {
     margin-top: 50px;
 }
 @media (max-width: 768px) {
+  body {
+    padding-top: 120px;
+  }
   .navbar {
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -754,15 +686,22 @@ footer {
   }
   .home-hero,
   .profile-banner,
-  .destinasi-banner,
   .galeri-banner,
   .tips-banner,
-  .kontak-banner {
-    margin-top: 80px; 
-    height: 220px; 
+  .kontak-banner { 
+  height: 220px; 
   }
   section {
     scroll-margin-top: 80px; 
+  }
+  .destinasi-banner { 
+    min-height: 260px;
+    padding: 30px 15px;
+  }
+  .destinasi-banner .banner-text {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;
   }
   .destinasi-gallery {
     flex-direction: column;
