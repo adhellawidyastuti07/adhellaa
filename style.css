@@ -734,3 +734,111 @@ footer {
     color: #aaa;
     margin-top: 50px;
 }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar .logo {
+    font-size: 1.2em;
+  }
+  .navbar .menu {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar .menu li a {
+    font-size: 0.9em;
+    padding-bottom: 2px;
+  }
+  .home-hero,
+  .profile-banner,
+  .destinasi-banner,
+  .galeri-banner,
+  .tips-banner,
+  .kontak-banner {
+    height: 200px;
+    margin-top: 50px; 
+  }
+  .home-hero .hero-content,
+  .banner-text,
+  .kontak-banner .banner-text {
+    padding: 0 10px;
+    font-size: 0.9em;
+  }
+  .home-hero h1,
+  .profile-banner h1,
+  .destinasi-banner h1,
+  .galeri-banner h1,
+  .tips-banner h1,
+  .kontak-banner h1 {
+    font-size: 1.5em;
+  }
+  .home-hero p,
+  .banner-text p,
+  .kontak-banner p {
+    font-size: 0.9em;
+  }
+  .card-container,
+  .destinasi-gallery,
+  .profile-gallery,
+  .tips-gallery,
+  .galeri-gallery {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card,
+  .destinasi-gallery .card,
+  .profile-gallery .card,
+  .tips-gallery .card,
+  .galeri-gallery .card {
+    width: 90%;
+    margin: auto;
+  }
+  .card img,
+  .destinasi-gallery .card img,
+  .profile-gallery .card img,
+  .tips-gallery .card img,
+  .galeri-gallery .card img {
+    height: 150px;
+  }
+  .profile-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  .profile-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .favorite,
+  .profile-desc,
+  .destinasi-desc,
+  .galeri-desc,
+  .tips-desc,
+  .kontak-section {
+    padding: 30px 10px;
+  }
+  .contact-card {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+  .contact-card form input,
+  .contact-card form textarea,
+  .contact-card form button {
+    font-size: 0.9em;
+  }
+  footer {
+    padding: 10px;
+    font-size: 0.85em;
+  }
+  .jam {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+}
