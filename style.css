@@ -726,17 +726,16 @@ footer {
     scroll-margin-top: 80px; 
   }
   .destinasi-banner { 
-    min-height: 60vh;  
-    padding: 0 15px;    
+    height: 300px;             
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
+    align-items: center;        
     text-align: center;
+    position: relative;
   }
   .destinasi-banner .banner-text {
-    position: relative;
-    z-index: 1;
     max-width: 90%;
+    font-size: 0.9em;
   }
   .destinasi-page {
     flex-direction: column;
