@@ -758,11 +758,11 @@ footer {
   .galeri-banner,
   .tips-banner,
   .kontak-banner {
-    margin-top: 60px; 
+    margin-top: 80px; 
     height: 220px; 
   }
   section {
-    scroll-margin-top: 90px; 
+    scroll-margin-top: 80px; 
   }
   .destinasi-gallery {
     flex-direction: column;
